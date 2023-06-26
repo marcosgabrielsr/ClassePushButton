@@ -19,7 +19,6 @@
     }
 
     //Método clickBtn(): Verifica se o botão foi pressionado, e retorna true apenas no instante em que ele foi pressionado(clicado)
-    //*OBS: Classe criada para trabalhar com arduino UNO com suas 14 portas digitais
     bool PushButton::clickBtn(){
       //pegando a leitura digital do pino do botão 
       bool state_btn = digitalRead(_pin);
@@ -40,4 +39,3 @@
       //retorna value
       return value;
     }
-    

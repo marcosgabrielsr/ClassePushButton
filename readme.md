@@ -22,7 +22,7 @@
 
 ### - clickBtn(): Uma função que retorna true no instante em que o botão é pressionado, ou seja, se ele for mantido pressionado será retornado false
 <div align="center">
-  <img src="https://cdn.discordapp.com/attachments/1112460925547581622/1122988588720730263/image.png">
+  <img src="https://cdn.discordapp.com/attachments/1112460925547581622/1122995425528529028/image.png">
 </div>
 
 ##Considerações finais:
