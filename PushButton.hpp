@@ -1,3 +1,4 @@
+#include <stdint.h>
 //
 // Classe PushButtons
 //  arquivo hpp
@@ -12,13 +13,16 @@
 class PushButton {
   //definindo métodos públicos
   public:
-    PushButton(const uint8_t pin);
+    PushButton(const uint8_t pin, const uint16_t time);
     bool pressBtn();
     bool clickBtn();
 
   //definindo métodos privados
   protected:  
     const uint8_t _pin;
+    const uint16_t _time;
+    bool old_state;
+    unsigned long delay1;
 };
 
 #endif
