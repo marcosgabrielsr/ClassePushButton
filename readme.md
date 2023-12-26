@@ -1,4 +1,10 @@
-# Arquivo .ino (Código Principal):
+**Autor:** Marcos Gabriel <br>
+**Data da última atualização:** 26/12/2023
+
+## Descrição
+Criei está classe para facilitar o trabalho e interação com os componentes PushButtons. Caso veja algo que possa ser melhorado, por favor, entre em contato comigo.
+
+## Arquivo .ino (Código Principal):
 Este arquivo .ino contém o código principal do projeto, que utiliza a biblioteca PushButton para interagir com botões conectados a pinos digitais do Arduino.
 
 1. Inclusão de Biblioteca:
@@ -20,7 +26,7 @@ O método loop() é onde a interação com os botões acontece. Ele consiste em 
 - Se o botão 2 for clicado, a mensagem "Btn2 Clicado!" é exibida no monitor serial.
 - Se o botão 3 for mantido pressionado, a mensagem "Btn3 está pressionado!" é exibida no monitor serial.
 
-# Arquivo PushButton.hpp (Definição da Classe):
+## Arquivo PushButton.hpp (Definição da Classe):
 
 Este arquivo contém a definição da classe PushButton.
 
@@ -33,7 +39,7 @@ A classe PushButton é definida com métodos públicos e membros protegidos.
 - O construtor da classe recebe um pino e um tempo como argumentos e inicializa os membros correspondentes.
 - Os métodos pressBtn() e clickBtn() são declarados como públicos. Esses métodos serão usados para verificar o estado dos botões.
 
-# Arquivo PushButton.cpp (Implementação da Classe):
+## Arquivo PushButton.cpp (Implementação da Classe):
 
 Este arquivo contém a implementação dos métodos da classe PushButton.
 
@@ -43,10 +49,10 @@ A biblioteca PushButton.hpp é incluída para que a implementação dos métodos
 2. Construtor da Classe PushButton:
 A implementação do construtor inicializa os membros da classe, configurando o pino do botão como entrada com resistor pull-up e configurando o estado antigo como verdadeiro.
 
-3. Método pressBtn():
+3. Método pressButton():
 O método pressBtn() retorna o estado do botão invertido (usando a função digitalRead(_pin)). Ou seja, retorna true quando o botão é pressionado.
 
-4. Método clickBtn():
+4. Método clickButton():
 O método clickBtn() verifica se o botão foi pressionado no momento em que o método é chamado, retornando true apenas se o botão tiver sido pressionado (clicado) desde a última vez que o método foi chamado. Isso é feito usando um intervalo de tempo (_time) para distinguir um clique de pressionamento contínuo.
 
 O conjunto de códigos forma um sistema de detecção de botões que responde a diferentes tipos de interações (clique e pressionamento) e fornece feedback ao usuário através do monitor serial. A classe PushButton é modular e reutilizável, permitindo a fácil adição de mais botões e interações em projetos Arduino.
